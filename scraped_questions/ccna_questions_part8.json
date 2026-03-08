@@ -52,6 +52,24 @@
         ]
     },
     {
+        "question": "Reliez chaque description au terme correspondant. (Les options ne sont pas toutes utilisées.)",
+        "type": "matching",
+        "pairs": [
+            {
+                "term": "Dimensionnement des messages",
+                "definition": "Processus consistant à décomposer un message long en parties distinctes avant de les envoyer sur le réseau"
+            },
+            {
+                "term": "Encapsulation des messages",
+                "definition": "Processus consistant à placer un format de message à l’intérieur d’un autre"
+            },
+            {
+                "term": "Codage des messages",
+                "definition": "Processus permettant de convertir des informations dans un format acceptable pour la transmission"
+            }
+        ]
+    },
+    {
         "question": "Un administrateur réseau ajoute un nouveau réseau local à une filiale. Le nouveau réseau local doit prendre en charge 4 périphériques connectés. Quel est le plus petit masque réseau que l’administrateur réseau peut utiliser pour le nouveau réseau?",
         "type": "multiple_choice",
         "answers": [
@@ -587,29 +605,7 @@
         "image_url": "https://ccnareponses.com/wp-content/uploads/2021/12/2021-11-11_235555.jpg"
     },
     {
-        "question": "Un administrateur réseau souhaite avoir le même masque de sous-réseau pour tous les réseaux d’un petit site. Le site a les réseaux et numéros de périphérique suivants :",
-        "type": "multiple_choice",
-        "answers": [
-            {
-                "answer": "Téléphones IP – 22 adresses",
-                "correct": false
-            },
-            {
-                "answer": "PC – 20 adresses nécessaires",
-                "correct": false
-            },
-            {
-                "answer": "Imprimantes – 2 adresses nécessaires",
-                "correct": false
-            },
-            {
-                "answer": "Scanners – 2 adresses nécessaires",
-                "correct": false
-            }
-        ]
-    },
-    {
-        "question": "L’administrateur réseau juge que 192.168.10.0/24 doit être le réseau utilisé sur ce site. Quel masque de sous-réseau permettrait d’utiliser de manière optimale les adresses disponibles pour les quatre sous-réseaux ?",
+        "question": "Un administrateur réseau souhaite avoir le même masque de sous-réseau pour tous les réseaux d’un petit site. Le site a les réseaux et numéros de périphérique suivants :\n- Téléphones IP –> 22 adresses\n- PC –> 20 adresses nécessaires\n- Imprimantes –> 2 adresses nécessaires\n- Scanners –> 2 adresses nécessaires\n\n L’administrateur réseau juge que 192.168.10.0/24 doit être le réseau utilisé sur ce site. Quel masque de sous-réseau permettrait d’utiliser de manière optimale les adresses disponibles pour les quatre sous-réseaux ?",
         "type": "multiple_choice",
         "answers": [
             {
@@ -639,6 +635,29 @@
         ]
     },
     {
+        "question": "Examinez l’illustration. Associez les réseaux aux adresses IP et aux préfixes capables de répondre aux exigences d’adressage d’hôte utilisable pour chaque réseau. (Les options ne doivent pas être toutes utilisées.)",
+        "type": "matching",
+        "pairs": [
+            {
+                "term": "Réseau A",
+                "definition": "192.168.0.0 /25"
+            },
+            {
+                "term": "Réseau B",
+                "definition": "192.168.0.128 /26"
+            },
+            {
+                "term": "Réseau C",
+                "definition": "192.168.0.224 /30"
+            },
+            {
+                "term": "Réseau D",
+                "definition": "192.168.0.192 /27"
+            }
+        ],
+        "image_url": "https://ccnareponses.com/wp-content/uploads/2021/12/2021-11-11_235555.jpg"
+    },
+    {
         "question": "Quelles sont les deux fonctions d’exécution sur la sous-couche MAC de la couche de liaison de données OSI pour faciliter la communication Ethernet? (Choisissez deux réponses.)",
         "type": "multiple_choice",
         "answers": [
@@ -657,6 +676,110 @@
             {
                 "answer": "Place les informations dans la trame qui indique le protocole de couche réseau encapsulé pour la trame.",
                 "correct": false
+            },
+            {
+                "answer": "gère la communication entre le logiciel de mise en réseau de la couche supérieure et le matériel de carte réseau Ethernet",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Quelles sont les deux fonctions d’exécution sur la sous-couche MAC de la couche de liaison de données OSI pour faciliter la communication Ethernet? (Choisissez deux réponses.)",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "ajoute des informations de contrôle Ethernet aux données du protocole réseau",
+                "correct": false
+            },
+            {
+                "answer": "met en œuvre CSMA/CD sur un support semi-duplex partagé hérité",
+                "correct": true
+            },
+            {
+                "answer": "gère la communication entre le logiciel de mise en réseau de la couche supérieure et le matériel de carte réseau Ethernet",
+                "correct": false
+            },
+            {
+                "answer": "intègre des flux de couche 2 entre 10 Gigabit Ethernet sur fibre et 1 Gigabit Ethernet sur cuivre",
+                "correct": true
+            },
+            {
+                "answer": "permet à IPv4 et IPv6 d’utiliser le même support physique",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Quelles sont les deux fonctions d’exécution sur la sous-couche MAC de la couche de liaison de données OSI pour faciliter la communication Ethernet? (Choisissez deux réponses.)",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "place les informations dans l’Ethernettrame qui identifie quel protocole de couche réseau est encapsulé par la trame",
+                "correct": false
+            },
+            {
+                "answer": "ajoute des informations de contrôle Ethernet aux données de protocole réseau",
+                "correct": false
+            },
+            {
+                "answer": "responsable de la structure interne de la trame Ethernet",
+                "correct": true
+            },
+            {
+                "answer": "permet à IPv4 et IPv6 d’utiliser le même support physique",
+                "correct": false
+            },
+            {
+                "answer": "implémente une bande-annonce avec séquence de contrôle de trame pour la détection d’erreurs",
+                "correct": true
+            }
+        ]
+    },
+    {
+        "question": "Quelles sont les deux fonctions d’exécution sur la sous-couche MAC de la couche de liaison de données OSI pour faciliter la communication Ethernet? (Choisissez deux réponses.)",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "intègre les flux de couche 2 entre 10 Gigabit Ethernet sur fibre et 1 Gigabit Ethernet sur cuivre",
+                "correct": true
+            },
+            {
+                "answer": "permet à IPv4 et IPv6 d’utiliser le même support physique",
+                "correct": false
+            },
+            {
+                "answer": "gère ​​la communication entre le logiciel de mise en réseau de la couche supérieure et le matériel de carte réseau Ethernet",
+                "correct": false
+            },
+            {
+                "answer": "ajoute des informations de contrôle Ethernet aux données de protocole réseau",
+                "correct": false
+            },
+            {
+                "answer": "implémente CSMA/CD sur les médias semi-duplex partagés hérités",
+                "correct": true
+            }
+        ]
+    },
+    {
+        "question": "Quelles sont les deux fonctions d’exécution sur la sous-couche MAC de la couche de liaison de données OSI pour faciliter la communication Ethernet? (Choisissez deux réponses.)",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "applique la délimitation des champs de trames Ethernet pour synchroniser la communication entre les nœuds",
+                "correct": true
+            },
+            {
+                "answer": "ajoute des informations de contrôle Ethernet aux données du protocole réseau",
+                "correct": false
+            },
+            {
+                "answer": "Place les informations dans la trame qui indique le protocole de couche réseau encapsulé pour la trame",
+                "correct": false
+            },
+            {
+                "answer": "applique les adresses MAC source et destination à la trame Ethernet",
+                "correct": true
             },
             {
                 "answer": "gère la communication entre le logiciel de mise en réseau de la couche supérieure et le matériel de carte réseau Ethernet",
@@ -764,6 +887,42 @@
             }
         ]
     },
+
+    {
+        "question": "Associez les caractéristiques aux méthodes de transmission correspondantes. (Les options ne doivent pas être toutes utilisées.)",
+        "type": "matching",
+        "pairs": [
+            {
+                "term": "Stocke toujours la trame entière",
+                "definition": "Store-and-Forward (Stockage et transfert)"
+            },
+            {
+                "term": "Vérifie le CRC avant d'effectuer la transmission",
+                "definition": "Store-and-Forward (Stockage et transfert)"
+            },
+            {
+                "term": "Vérifie la longueur de la trame avant d'effectuer la transmission",
+                "definition": "Store-and-Forward (Stockage et transfert)"
+            },
+            {
+                "term": "Ne transmet pas les diffusions",
+                "definition": "Cut-Through (Transfert direct)"
+            },
+            {
+                "term": "a une faible latence",
+                "definition": "Cut-Through (Transfert direct)"
+            },
+            {
+                "term": "Peut transmettre des trames incomplètes",
+                "definition": "Cut-Through (Transfert direct)"
+            },
+            {
+                "term": "Démarre la transmission lorsque l'addresse de destination est reçue",
+                "definition": "Cut-Through (Transfert direct)"
+            }
+        ]
+    },
+
     {
         "question": "Quelles propositions relatives aux adresses IP et MAC dans le cadre de la transmission des données si NAT n’est pas impliquée sont exactes ? (Choisissez deux réponses.)",
         "type": "multiple_choice",
@@ -812,6 +971,7 @@
             }
         ]
     },
+
     {
         "question": "Quelles sont les fonctions d’ARP ? (Choisissez deux réponses.)",
         "type": "multiple_choice",
@@ -959,8 +1119,7 @@
                 "term": "Adresse link-local",
                 "definition": "127.0.0.1"
             }
-        ],
-        "image_url": "https://ccnareponses.com/wp-content/uploads/2021/12/2024-10-13_160654.jpg"
+        ]
     },
     {
         "question": "Quel scénario décrit une fonction fournie par la couche transport ?",
