@@ -235,6 +235,24 @@ function startFree() {
     startSession(shuffle(pool).slice(0, n));
 }
 
+function openTrainExamDialog() {
+    const pool = availableQuestions(EXAM_Q);
+    document.getElementById("train-max-label").textContent = `Nombre de questions (1 – ${pool.length}) · part8 uniquement`;
+    const inp = document.getElementById("train-n");
+    inp.max = pool.length;
+    if (parseInt(inp.value) > pool.length) inp.value = pool.length;
+    document.getElementById("train-exam-dialog").classList.remove("hidden");
+}
+function closeTrainExamDialog() {
+    document.getElementById("train-exam-dialog").classList.add("hidden");
+}
+function startTrainExam() {
+    const pool = availableQuestions(EXAM_Q);
+    const n = Math.min(Math.max(1, parseInt(document.getElementById("train-n").value) || 20), pool.length);
+    closeTrainExamDialog();
+    startSession(shuffle(pool).slice(0, n));
+}
+
 function startSession(questions) {
     if (!questions.length) {
         alert("Aucune question disponible.");
