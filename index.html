@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CCNA Quiz</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div id="app">
+            <!-- ══════════════ MENU ══════════════ -->
+            <div id="menu">
+                <div class="logo-block">
+                    <div class="logo-ascii">██████╗ ██████╗███╗ ██╗ █████╗</div>
+                    <div class="logo-title">CCNA QUIZ</div>
+                    <div class="logo-sub">Entraînement à l'examen Cisco CCNA</div>
+                </div>
+
+                <div class="stats-pill">
+                    <span>📚 <b id="stat-total">—</b> questions</span>
+                    <span>✦ <b id="stat-qcm">—</b> QCM</span>
+                    <span>🔗 <b id="stat-match">—</b> à relier</span>
+                    <span>🎯 <b id="stat-exam">—</b> examen</span>
+                    <span id="stat-reported-wrap" class="hidden">⚑ <b id="stat-reported">0</b> signalées</span>
+                </div>
+
+                <div class="mode-grid">
+                    <div class="mode-card" style="--card-accent: var(--accent)" onclick="startExam()">
+                        <div class="mode-icon">🎯</div>
+                        <div class="mode-title">Mode Examen</div>
+                        <div class="mode-desc">60 questions · part8 uniquement<br />Conditions réelles CCNA</div>
+                        <button class="btn btn-primary">Démarrer</button>
+                    </div>
+
+                    <div class="mode-card" style="--card-accent: var(--blue)" onclick="openFreeDialog()">
+                        <div class="mode-icon">📖</div>
+                        <div class="mode-title">Mode Libre</div>
+                        <div class="mode-desc">Choisir le nombre<br />et le type de questions</div>
+                        <button class="btn btn-blue">Démarrer</button>
+                    </div>
+
+                    <div class="mode-card" style="--card-accent: var(--purple)" onclick="startMatchOnly()">
+                        <div class="mode-icon">🔗</div>
+                        <div class="mode-title">Relier seulement</div>
+                        <div class="mode-desc">Questions à associer<br />termes &amp; définitions</div>
+                        <button class="btn btn-purple">Démarrer</button>
+                    </div>
+
+                    <div class="mode-card" style="--card-accent: var(--yellow)" onclick="startAll()">
+                        <div class="mode-icon">🔁</div>
+                        <div class="mode-title">Tout réviser</div>
+                        <div class="mode-desc">Toutes les questions<br />parts 1 → 8 mélangées</div>
+                        <button class="btn btn-yellow">Démarrer</button>
+                    </div>
+
+                    <div class="mode-card" style="--card-accent: var(--orange)" onclick="showReportedPanel()">
+                        <div class="mode-icon">⚑</div>
+                        <div class="mode-title">Questions signalées</div>
+                        <div class="mode-desc">Voir et gérer les questions<br />masquées pour erreur</div>
+                        <button class="btn btn-orange">Gérer</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ══════════════ FREE DIALOG ══════════════ -->
+            <div id="free-dialog" class="modal-overlay hidden">
+                <div class="modal">
+                    <h3>Mode Libre</h3>
+                    <p id="free-max-label">Nombre de questions (1 – —)</p>
+                    <input type="number" id="free-n" value="20" min="1" />
+                    <div class="filter-tabs">
+                        <div class="filter-tab active" data-type="all" onclick="selectType(this)">Tout</div>
+                        <div class="filter-tab" data-type="multiple_choice" onclick="selectType(this)">QCM</div>
+                        <div class="filter-tab" data-type="matching" onclick="selectType(this)">Relier</div>
+                    </div>
+                    <div class="modal-btns">
+                        <button class="btn btn-dim" onclick="closeFreeDialog()">Annuler</button>
+                        <button class="btn btn-blue" onclick="startFree()">Démarrer</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ══════════════ REPORT DIALOG ══════════════ -->
+            <div id="report-dialog" class="modal-overlay hidden">
+                <div class="modal" style="max-width: 460px">
+                    <h3>⚑ Signaler une erreur</h3>
+                    <p>Cette question sera masquée jusqu'à correction.</p>
+                    <div class="report-choices">
+                        <div class="report-choice" data-reason="wrong_answer" onclick="selectReason(this)">
+                            <div class="report-choice-icon">❌</div>
+                            <div>
+                                <div class="report-choice-label">Réponse incorrecte</div>
+                                <div class="report-choice-desc">La bonne réponse indiquée est fausse</div>
+                            </div>
+                        </div>
+                        <div class="report-choice" data-reason="wrong_question" onclick="selectReason(this)">
+                            <div class="report-choice-icon">❓</div>
+                            <div>
+                                <div class="report-choice-label">Question mal formulée</div>
+                                <div class="report-choice-desc">Texte confus, incomplet ou coupé</div>
+                            </div>
+                        </div>
+                        <div class="report-choice" data-reason="display_bug" onclick="selectReason(this)">
+                            <div class="report-choice-icon">🖥</div>
+                            <div>
+                                <div class="report-choice-label">Problème d'affichage</div>
+                                <div class="report-choice-desc">Image manquante, mise en forme cassée</div>
+                            </div>
+                        </div>
+                        <div class="report-choice" data-reason="duplicate" onclick="selectReason(this)">
+                            <div class="report-choice-icon">📋</div>
+                            <div>
+                                <div class="report-choice-label">Question en double</div>
+                                <div class="report-choice-desc">Cette question apparaît plusieurs fois</div>
+                            </div>
+                        </div>
+                    </div>
+                    <textarea class="report-note" id="report-note" placeholder="Note optionnelle (détails, correction proposée…)"></textarea>
+                    <div class="modal-btns">
+                        <button class="btn btn-dim" onclick="closeReportDialog()">Annuler</button>
+                        <button class="btn btn-orange" onclick="submitReport()">Signaler</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ══════════════ QUIZ ══════════════ -->
+            <div id="quiz" class="hidden">
+                <div class="topbar">
+                    <div class="q-counter" id="q-counter">Q 1/1</div>
+                    <div class="progress-wrap">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div class="q-tag" id="q-tag" style="border-color: var(--accent); color: var(--accent)">QCM</div>
+                </div>
+
+                <div class="quiz-body" id="quiz-body"></div>
+
+                <div class="botbar">
+                    <div class="feedback" id="feedback"></div>
+                    <div class="botbar-btns">
+                        <button class="btn btn-dim btn-sm" onclick="goMenu()">← Menu</button>
+                        <button class="btn btn-orange btn-sm btn-report" id="report-btn" onclick="openReportDialog()">⚑ Signaler</button>
+                        <button class="btn btn-primary" id="validate-btn" onclick="handleValidate()">Valider →</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ══════════════ RESULTS ══════════════ -->
+            <div id="results" class="hidden">
+                <div class="results-header">
+                    <div class="results-title">RÉSULTATS</div>
+                    <div class="results-grade" id="results-grade"></div>
+                </div>
+                <div style="padding: 24px 20px 6px; text-align: center; width: 100%">
+                    <div class="score-big" id="score-big"></div>
+                    <div class="score-sub" id="score-sub"></div>
+                    <div class="pbar-wrap">
+                        <div class="pbar-bg"><div class="pbar-fill" id="pbar-fill" style="width: 0%"></div></div>
+                    </div>
+                </div>
+                <div class="wrong-list" id="wrong-list"></div>
+                <div class="results-btns">
+                    <button class="btn btn-dim" onclick="goMenu()">← Menu</button>
+                    <button class="btn btn-primary" onclick="replaySession()">↺ Rejouer</button>
+                    <button class="btn btn-wrong" id="retry-wrong-btn" onclick="retryWrong()">✘ Réviser ratées</button>
+                </div>
+            </div>
+
+            <!-- ══════════════ REPORTED PANEL ══════════════ -->
+            <div id="reported-panel" class="hidden">
+                <div class="panel-header">
+                    <div style="font-size: 20px">⚑</div>
+                    <h2>Questions signalées</h2>
+                    <button class="btn btn-dim btn-sm" onclick="goMenu()">← Retour</button>
+                </div>
+                <div class="panel-body" id="panel-body"></div>
+            </div>
+        </div>
+        <!-- #app -->
+        <script src="script.js"></script>
+    </body>
+</html>
