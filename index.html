@@ -6,7 +6,7 @@
         <title>CCNA Quiz</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="style.css?v=2" />
     </head>
     <body>
         <div id="app">
@@ -41,11 +41,11 @@
                         <button class="btn btn-blue">Démarrer</button>
                     </div>
 
-                    <div class="mode-card" style="--card-accent: #f59e0b" onclick="openTrainExamDialog()">
+                    <div class="mode-card" style="--card-accent: var(--amber)" onclick="openTrainExamDialog()">
                         <div class="mode-icon">📝</div>
                         <div class="mode-title">Entraînement Examen</div>
                         <div class="mode-desc">Choisir le nombre · part8 only<br />Prépare le mode examen</div>
-                        <button class="btn" style="color: #f59e0b; border-color: #f59e0b">Démarrer</button>
+                        <button class="btn btn-amber">Démarrer</button>
                     </div>
 
                     <div class="mode-card" style="--card-accent: var(--purple)" onclick="startMatchOnly()">
@@ -97,7 +97,7 @@
                     <input type="number" id="train-n" value="20" min="1" />
                     <div class="modal-btns">
                         <button class="btn btn-dim" onclick="closeTrainExamDialog()">Annuler</button>
-                        <button class="btn" style="color: #f59e0b; border-color: #f59e0b" onclick="startTrainExam()">Démarrer</button>
+                        <button class="btn btn-amber" onclick="startTrainExam()">Démarrer</button>
                     </div>
                 </div>
             </div>
@@ -199,6 +199,6 @@
             </div>
         </div>
         <!-- #app -->
-        <script src="script.js"></script>
+        <script src="script.js?v=2"></script>
     </body>
 </html>

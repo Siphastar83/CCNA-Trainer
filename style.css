@@ -16,6 +16,7 @@
     --dim: #8b949e;
     --yellow: #fbbf24;
     --orange: #fb923c;
+    --amber: #f59e0b;
     --r: 10px;
 }
 
@@ -250,6 +251,14 @@ body::before {
 }
 .btn-orange:hover {
     background: var(--orange);
+    color: var(--bg);
+}
+.btn-amber {
+    color: var(--amber);
+    border-color: var(--amber);
+}
+.btn-amber:hover {
+    background: var(--amber);
     color: var(--bg);
 }
 .btn-sm {
