@@ -1,0 +1,168 @@
+[
+    {
+        "question": "Quelles sont les deux fonctions exécutées sur la sous-couche MAC de la couche de liaison de données OSI? (Choisissez deux réponses.)",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Ajoute des informations de contrôle de couche 2 aux données du protocole réseau.",
+                "correct": false
+            },
+            {
+                "answer": "Contrôle la carte réseau responsable de l’envoi et de la réception des données sur le support physique.",
+                "correct": true
+            },
+            {
+                "answer": "Place les informations dans la trame qui indique le protocole de couche réseau utilisé pour la trame.",
+                "correct": false
+            },
+            {
+                "answer": "Communique entre le logiciel de mise en réseau sur les couches supérieures et le matériel du périphérique sur les couches inférieures.",
+                "correct": false
+            },
+            {
+                "answer": "Fournit un mécanisme permettant à plusieurs périphériques de communiquer sur un support partagé.",
+                "correct": true
+            }
+        ]
+    },
+    {
+        "question": "Quelle action se produira si un commutateur reçoit une trame et possède l’adresse MAC source dans la table MAC?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Le commutateur actualise la minuterie sur cette entrée.",
+                "correct": true
+            },
+            {
+                "answer": "Le commutateur partage l’entrée de la table d’adresses MAC avec tous les commutateurs connectés.",
+                "correct": false
+            },
+            {
+                "answer": "Le commutateur n’avance pas la trame.",
+                "correct": false
+            },
+            {
+                "answer": "Le commutateur l’ajoute à sa table d’adresses MAC associée au numéro de port.",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Un administrateur réseau mesure le transfert de bits sur le réseau fédérateur d’une entreprise pour une application financière stratégique. Il remarque que le débit du réseau est inférieur à la bande passante attendue. Quels facteurs peuvent avoir une influence sur les différences de débit ? (Choisissez trois propositions.)",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "La quantité de trafic acheminée sur le réseau actuellement",
+                "correct": true
+            },
+            {
+                "answer": "La complexité de la méthode d’encapsulation appliquée aux données",
+                "correct": false
+            },
+            {
+                "answer": "Le type de trafic acheminé sur le réseau actuellement",
+                "correct": true
+            },
+            {
+                "answer": "La latence créée par le nombre de périphériques réseau que les données traversent",
+                "correct": true
+            },
+            {
+                "answer": "La bande passante de la connexion du réseau étendu à Internet",
+                "correct": false
+            },
+            {
+                "answer": "La fiabilité de l’infrastructure Gigabit Ethernet du réseau fédérateur",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Quelle action se produira si un commutateur reçoit une trame avec l’adresse MAC de destination FF:FF:FF:FF:FF:FF?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Le commutateur n’avance pas la trame.",
+                "correct": false
+            },
+            {
+                "answer": "Le commutateur transmet tous les ports à l’exception du port d’entrée.",
+                "correct": true
+            },
+            {
+                "answer": "Le commutateur actualise la minuterie sur cette entrée.",
+                "correct": false
+            },
+            {
+                "answer": "Le commutateur envoie la trame à un routeur connecté car l’adresse MAC de destination n’est pas locale.",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Quel terme de couche physique OSI décrit la capacité à laquelle un support peut transporter des données?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "IEEE",
+                "correct": false
+            },
+            {
+                "answer": "EIA/TIA",
+                "correct": false
+            },
+            {
+                "answer": "bande passante",
+                "correct": true
+            },
+            {
+                "answer": "Transport aérien",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Quelle action se produira si un hôte reçoit une trame avec une adresse MAC de destination FF:FF:FF:FF:FF:FF?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "L’hôte envoie la trame au commutateur pour mettre à jour la table d’adresses MAC.",
+                "correct": false
+            },
+            {
+                "answer": "L’hôte transmet la trame au routeur.",
+                "correct": false
+            },
+            {
+                "answer": "L’hôte traitera la trame.",
+                "correct": true
+            },
+            {
+                "answer": "L’hôte transmet la trame au routeur.",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Quelle déclaration est vraie sur la méthode d’accès CSMA/CD utilisée dans Ethernet?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Un signal de brouillage provoque uniquement l’exécution d’un algorithme de backoff par les périphériques qui ont provoqué la collision.",
+                "correct": false
+            },
+            {
+                "answer": "Lorsqu’un dispositif entend un signal porteur et transmet, une collision ne peut pas se produire.",
+                "correct": false
+            },
+            {
+                "answer": "Tous les périphériques réseau doivent écouter avant de transmettre.",
+                "correct": true
+            },
+            {
+                "answer": "Les dispositifs impliqués dans une collision obtiennent la priorité à transmettre après la période de retour en arrière.",
+                "correct": false
+            }
+        ]
+    }
+]

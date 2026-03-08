@@ -1,0 +1,292 @@
+[
+    {
+        "question": "Quel facteur détermine la taille de la fenêtre TCP ?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "La quantité de données à transmettre",
+                "correct": false
+            },
+            {
+                "answer": "Le nombre de services inclus dans le segment TCP",
+                "correct": false
+            },
+            {
+                "answer": "La quantité de données que la destination peut traiter simultanément",
+                "correct": true
+            },
+            {
+                "answer": "La quantité de données que la source est capable d’envoyer simultanément",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Un client crée un paquet à envoyer à un serveur. Le client demande le service POP3. Quel numéro sera utilisé comme numéro de port de destination dans le paquet d’envoi?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "110",
+                "correct": true
+            },
+            {
+                "answer": "53",
+                "correct": false
+            },
+            {
+                "answer": "67",
+                "correct": false
+            },
+            {
+                "answer": "69",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Un client crée un paquet à envoyer à un serveur. Le client demande le service SNMP. Quel numéro sera utilisé comme numéro de port de destination dans le paquet d’envoi?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "443",
+                "correct": false
+            },
+            {
+                "answer": "110",
+                "correct": false
+            },
+            {
+                "answer": "80",
+                "correct": false
+            },
+            {
+                "answer": "161",
+                "correct": true
+            }
+        ]
+    },
+    {
+        "question": "Quel protocole doit utiliser un client pour communiquer avec un serveur web de manière sécurisée ?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "SMTP",
+                "correct": false
+            },
+            {
+                "answer": "IMAP",
+                "correct": false
+            },
+            {
+                "answer": "SMB",
+                "correct": false
+            },
+            {
+                "answer": "HTTPS",
+                "correct": true
+            }
+        ]
+    },
+    {
+        "question": "Comment les numéros de port sont-ils utilisés dans le processus d’encapsulation TCP/IP?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Les numéros de port source et de port de destination sont générés de façon aléatoire.",
+                "correct": false
+            },
+            {
+                "answer": "Les numéros de port source et de port de destination ne sont pas nécessaires lorsque UDP est le protocole de couche de transport utilisé pour la communication.",
+                "correct": false
+            },
+            {
+                "answer": "Les numéros de port de destination sont attribués automatiquement et ne peuvent pas être modifiés.",
+                "correct": false
+            },
+            {
+                "answer": "Si plusieurs conversations utilisent le même service se produisent, le numéro de port source est utilisé pour suivre les conversations séparées.",
+                "correct": true
+            }
+        ]
+    },
+    {
+        "question": "Quelle couche du modèle TCP/IP permet de mettre en forme, de compresser et de chiffrer les données ?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Session",
+                "correct": false
+            },
+            {
+                "answer": "Application",
+                "correct": true
+            },
+            {
+                "answer": "Interréseau",
+                "correct": false
+            },
+            {
+                "answer": "Accès réseau",
+                "correct": false
+            },
+            {
+                "answer": "Présentation",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Un PC qui communique avec un serveur Web a une taille de fenêtre TCP de 6000 octets lors de l’envoi de données et une taille de paquet de 1500 octets. Quel octet d’informations le serveur Web reconnaît-il après avoir reçu quatre paquets de données du PC?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "3001",
+                "correct": false
+            },
+            {
+                "answer": "1500",
+                "correct": false
+            },
+            {
+                "answer": "6001",
+                "correct": true
+            },
+            {
+                "answer": "1501",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Un PC télécharge un fichier volumineux depuis un serveur. La fenêtre TCP est de 1 000 octets. Le serveur envoie le fichier à l’aide de segments de 100 octets. Combien de segments le serveur envoie-t-il avant de demander un accusé de réception de la part du PC ?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "10 segments",
+                "correct": true
+            },
+            {
+                "answer": "100 segments",
+                "correct": false
+            },
+            {
+                "answer": "1 segment",
+                "correct": false
+            },
+            {
+                "answer": "1 000 segments",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Un PC qui communique avec un serveur Web a une taille de fenêtre TCP de 6000 octets lors de l’envoi de données et une taille de paquet de 1500 octets. 52. Quel octet d’informations le serveur Web reconnaît-il après avoir reçu deux paquets de données du PC?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "6001",
+                "correct": false
+            },
+            {
+                "answer": "3001",
+                "correct": true
+            },
+            {
+                "answer": "3000",
+                "correct": false
+            },
+            {
+                "answer": "4500",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Un client crée un paquet à envoyer à un serveur. Le client demande le service SSH. Quel numéro sera utilisé comme numéro de port de destination dans le paquet d’envoi?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "22",
+                "correct": true
+            },
+            {
+                "answer": "67",
+                "correct": false
+            },
+            {
+                "answer": "80",
+                "correct": false
+            },
+            {
+                "answer": "69",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Un PC qui communique avec un serveur Web a une taille de fenêtre TCP de 6000 octets lors de l’envoi de données et une taille de paquet de 1500 octets. Quel octet d’informations le serveur Web reconnaît-il après avoir reçu deux paquets de données du PC?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "3001",
+                "correct": true
+            },
+            {
+                "answer": "4500",
+                "correct": false
+            },
+            {
+                "answer": "6001",
+                "correct": false
+            },
+            {
+                "answer": "6000",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Un client crée un paquet à envoyer à un serveur. Le client demande un service FTP. Quel numéro sera utilisé comme numéro de port de destination dans le paquet d’envoi?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "67",
+                "correct": false
+            },
+            {
+                "answer": "69",
+                "correct": false
+            },
+            {
+                "answer": "80",
+                "correct": false
+            },
+            {
+                "answer": "21",
+                "correct": true
+            }
+        ]
+    },
+    {
+        "question": "Un client crée un paquet à envoyer à un serveur. Le client demande le service TFTP. Quel numéro sera utilisé comme numéro de port de destination dans le paquet d’envoi?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "67",
+                "correct": false
+            },
+            {
+                "answer": "69",
+                "correct": true
+            },
+            {
+                "answer": "80",
+                "correct": false
+            },
+            {
+                "answer": "53",
+                "correct": false
+            }
+        ]
+    }
+]

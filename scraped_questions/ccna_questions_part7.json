@@ -1,0 +1,344 @@
+[
+    {
+        "question": "Quelle caractéristique décrit un logiciel espion ?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "logiciels installés sur un périphérique utilisateur qui collectent secrètement des informations sur l’utilisateur",
+                "correct": true
+            },
+            {
+                "answer": "une attaque qui ralentit ou bloque un périphérique ou un service réseau",
+                "correct": false
+            },
+            {
+                "answer": "un périphérique réseau qui filtre l’accès et le trafic entrant dans un réseau",
+                "correct": false
+            },
+            {
+                "answer": "l’utilisation d’informations d’identification volées pour accéder à des données privées",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Quels deux dispositifs seraient décrits comme des dispositifs intermédiaires ? (Choisissez deux propositions.)",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "scanner de vente au détail",
+                "correct": false
+            },
+            {
+                "answer": "IPS",
+                "correct": true
+            },
+            {
+                "answer": "serveur",
+                "correct": false
+            },
+            {
+                "answer": "robots de ligne d’assemblage",
+                "correct": false
+            },
+            {
+                "answer": "Console de jeux",
+                "correct": false
+            },
+            {
+                "answer": "Contrôleur LAN sans fil",
+                "correct": true
+            }
+        ]
+    },
+    {
+        "question": "Quelle déclaration décrit la sécurité du réseau ?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Il synchronise les flux de trafic à l’aide d’horodatages.",
+                "correct": false
+            },
+            {
+                "answer": "Il garantit que les données sensibles de l’entreprise sont disponibles pour les utilisateurs autorisés.",
+                "correct": true
+            },
+            {
+                "answer": "Il soutient la croissance au fil du temps conformément aux procédures de conception de réseau approuvées.",
+                "correct": false
+            },
+            {
+                "answer": "Il priorise les flux de données afin de donner la priorité au trafic sensible aux retards.",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Examinez l’illustration. Un administrateur tente de configurer le commutateur mais reçoit le message d’erreur affiché sur l’illustration. Quel est le problème ?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "L’administrateur doit d’abord passer en mode d’exécution privilégié avant d’exécuter la commande.",
+                "correct": true
+            },
+            {
+                "answer": "La commande complète, configure terminal, doit être utilisée.",
+                "correct": false
+            },
+            {
+                "answer": "L’administrateur est déjà en mode de configuration globale.",
+                "correct": false
+            },
+            {
+                "answer": "L’administrateur doit se connecter via le port de console pour accéder au mode de configuration globale.",
+                "correct": false
+            }
+        ],
+        "image_url": "https://ccnareponses.com/wp-content/uploads/2024/11/i224457n1v4.png"
+    },
+    {
+        "question": "Quelle est la caractéristique d’une interface virtuelle de commutateur (SVI) ?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Une interface virtuelle signifie qu’il n’y a aucun matériel physique sur le périphérique qui lui est associé.",
+                "correct": false
+            },
+            {
+                "answer": "Les SVI ne nécessitent pas l’activation de la commande no shutdown.",
+                "correct": false
+            },
+            {
+                "answer": "Un SVI est créé dans le logiciel et nécessite une adresse IP configurée et un masque de sous-réseau afin de fournir un accès distant au commutateur.",
+                "correct": true
+            },
+            {
+                "answer": "Les SVIs sont préconfigurés sur les commutateurs Cisco.",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Qu’est-ce qu’un utilisateur tente de déterminer en exécutant une commande ping 10.1.1.1 sur un PC ?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Si la pile TCP/IP fonctionne sur le PC sans engendrer de trafic",
+                "correct": false
+            },
+            {
+                "answer": "S’il existe une connectivité avec le périphérique de destination",
+                "correct": true
+            },
+            {
+                "answer": "Le type de périphérique à destination",
+                "correct": false
+            },
+            {
+                "answer": "Le chemin que le trafic prendra pour atteindre sa destination",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Quelles trois couches du modèle OSI sont comparables à la couche application du modèle TCP/IP ? (Choisissez trois propositions.)",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Liaison de données",
+                "correct": false
+            },
+            {
+                "answer": "Application",
+                "correct": true
+            },
+            {
+                "answer": "Session",
+                "correct": true
+            },
+            {
+                "answer": "Réseau",
+                "correct": false
+            },
+            {
+                "answer": "Présentation",
+                "correct": true
+            },
+            {
+                "answer": "Transport",
+                "correct": false
+            },
+            {
+                "answer": "Physique",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Deux couches du modèle OSI ont les mêmes fonctionnalités que deux autres couches du modèle TCP/IP ? Lesquelles ? (Choisissez deux propositions.)",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Transport",
+                "correct": true
+            },
+            {
+                "answer": "Session",
+                "correct": false
+            },
+            {
+                "answer": "Liaison de données",
+                "correct": false
+            },
+            {
+                "answer": "Réseau",
+                "correct": true
+            },
+            {
+                "answer": "Physique",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Quelle unité de données de protocole est traitée lorsqu’un ordinateur hôte désencapsule un message sur la couche transport du modèle TCP/IP ?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "paquet",
+                "correct": false
+            },
+            {
+                "answer": "segment",
+                "correct": true
+            },
+            {
+                "answer": "trame",
+                "correct": false
+            },
+            {
+                "answer": "bit",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Quel terme de couche physique OSI décrit la mesure du transfert de bits sur un milieu sur une période donnée ?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "débit applicatif",
+                "correct": false
+            },
+            {
+                "answer": "débit",
+                "correct": true
+            },
+            {
+                "answer": "bande passante",
+                "correct": false
+            },
+            {
+                "answer": "latence",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Quelles propositions décrivent les caractéristiques de la fibre optique ? (Choisissez deux réponses.)",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "La fibre optique multimode transporte des signaux à partir de plusieurs périphériques expéditeurs.",
+                "correct": false
+            },
+            {
+                "answer": "La fibre optique ne conduit pas l’électricité.",
+                "correct": true
+            },
+            {
+                "answer": "La fibre optique utilise des LED pour les câbles monomodes et la technologie laser pour les câbles multimodes.",
+                "correct": false
+            },
+            {
+                "answer": "La fibre optique affiche une perte de signal élevée.",
+                "correct": false
+            },
+            {
+                "answer": "La fibre optique est principalement utilisée comme câblage du réseau fédérateur.",
+                "correct": true
+            }
+        ]
+    },
+    {
+        "question": "Examinez l’illustration. Quel est le débit maximal possible entre l’ordinateur et le serveur ?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "100 Mbit/s",
+                "correct": false
+            },
+            {
+                "answer": "10 Mbit/s",
+                "correct": false
+            },
+            {
+                "answer": "128 Kbit/s",
+                "correct": true
+            },
+            {
+                "answer": "1000 Mbit/s",
+                "correct": false
+            }
+        ],
+        "image_url": "https://ccnareponses.com/wp-content/uploads/2024/11/i2a80765n1v1.png"
+    },
+    {
+        "question": "Quels sont les deux acronymes qui représentent les sous-couches de liaison de données sur lesquelles Ethernet s’appuie pour fonctionner ? (Choisissez deux propositions.)",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "FCS",
+                "correct": false
+            },
+            {
+                "answer": "SFD",
+                "correct": false
+            },
+            {
+                "answer": "CSMA",
+                "correct": false
+            },
+            {
+                "answer": "MAC",
+                "correct": true
+            },
+            {
+                "answer": "LLC",
+                "correct": true
+            }
+        ]
+    },
+    {
+        "question": "Que fait un routeur lorsqu’il reçoit une trame de couche 2 sur le support réseau ?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "désencapsule la trame",
+                "correct": true
+            },
+            {
+                "answer": "Réencapsule le paquet dans une nouvelle trame",
+                "correct": false
+            },
+            {
+                "answer": "Achemine la nouvelle trame appropriée jusqu’au support de ce segment du réseau physique",
+                "correct": false
+            },
+            {
+                "answer": "détermine le meilleur chemin",
+                "correct": false
+            }
+        ]
+    }
+]

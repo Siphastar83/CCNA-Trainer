@@ -1,0 +1,200 @@
+[
+    {
+        "question": "Quel exemple de code malveillant serait qualifié de cheval de Troie ?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Un programme malveillant développé de manière à ressembler à un jeu vidéo",
+                "correct": true
+            },
+            {
+                "answer": "Un programme malveillant qui se greffe sur un programme légitime et infecte d’autres programmes lorsqu’il est lancé",
+                "correct": false
+            },
+            {
+                "answer": "Un programme malveillant qui nécessite l’intervention manuelle de l’utilisateur pour se propager entre des systèmes",
+                "correct": false
+            },
+            {
+                "answer": "Un programme malveillant qui se propage automatiquement d’un système à un autre en exploitant une faille de sécurité sur la cible",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Quelle fonctionnalité de SSH le rend plus sécurisé que Telnet pour une connexion de gestion de périphériques?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "informations de connexion et chiffrement des données",
+                "correct": true
+            },
+            {
+                "answer": "exigences plus strictes en matière de mot de passe",
+                "correct": false
+            },
+            {
+                "answer": "connexion aléatoire à un port unique",
+                "correct": false
+            },
+            {
+                "answer": "confidentialité avec IPSec",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Quelle attaque implique une compromission des données qui se produit entre deux points d’extrémité?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "homme-au-milieu",
+                "correct": true
+            },
+            {
+                "answer": "extraction des paramètres de sécurité",
+                "correct": false
+            },
+            {
+                "answer": "Déni de service",
+                "correct": false
+            },
+            {
+                "answer": "nom d’utilisateur énumération",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Un administrateur décide d’utiliser «Robert» comme mot de passe sur un routeur nouvellement installé. Quelle déclaration s’applique au choix du mot de passe?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Il est faible car il utilise des renseignements personnels facilement trouvés.",
+                "correct": true
+            },
+            {
+                "answer": "Il est fort parce qu’il utilise une phrase secrète.",
+                "correct": false
+            },
+            {
+                "answer": "Il est fort car il utilise un minimum de 10 chiffres, lettres et caractères spéciaux.",
+                "correct": false
+            },
+            {
+                "answer": "Il est fort car il utilise un minimum de 10 chiffres, lettres et caractères spéciaux.",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Un technicien réseau dépanne un problème et doit vérifier les adresses IP de toutes les interfaces d’un routeur. Quelle est la meilleure commande à utiliser pour accomplir la tâche?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "show ip interface brief",
+                "correct": true
+            },
+            {
+                "answer": "nslookup",
+                "correct": false
+            },
+            {
+                "answer": "show ip route",
+                "correct": false
+            },
+            {
+                "answer": "ipconfig getifaddr en0",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Un utilisateur souhaite connaître l’adresse IP du PC. Quelle est la meilleure commande à utiliser pour accomplir la tâche?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "ipconfig",
+                "correct": true
+            },
+            {
+                "answer": "show ip nat translations",
+                "correct": false
+            },
+            {
+                "answer": "copy running-config startup-config",
+                "correct": false
+            },
+            {
+                "answer": "show interfaces",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Un administrateur décide d’utiliser « 12345678! » comme mot de passe sur un routeur nouvellement installé. Quelle déclaration s’applique au choix du mot de passe?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Il est fort car il utilise un minimum de 10 chiffres, lettres et caractères spéciaux.",
+                "correct": false
+            },
+            {
+                "answer": "Il est fort parce qu’il utilise une phrase secrète.",
+                "correct": false
+            },
+            {
+                "answer": "Il est faible parce qu’il utilise une série de chiffres ou de lettres.",
+                "correct": true
+            },
+            {
+                "answer": "Il est faible car c’est un mot qui se trouve facilement dans le dictionnaire.",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Un administrateur décide d’utiliser « PR3s!d7n&0 » comme mot de passe sur un routeur nouvellement installé. Quelle déclaration s’applique au choix du mot de passe?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Il est faible car c’est un mot qui se trouve facilement dans le dictionnaire.",
+                "correct": false
+            },
+            {
+                "answer": "Il est faible car il utilise des renseignements personnels facilement trouvés.",
+                "correct": false
+            },
+            {
+                "answer": "Il est fort car il utilise un minimum de 10 chiffres, lettres et caractères spéciaux.",
+                "correct": true
+            },
+            {
+                "answer": "Il est faible car il s’agit souvent du mot de passe par défaut sur les nouveaux appareils.",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Un administrateur décide d’utiliser «Feb121978» comme mot de passe sur un routeur nouvellement installé. Quelle déclaration s’applique au choix du mot de passe?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Il est fort parce qu’il utilise une phrase secrète.",
+                "correct": false
+            },
+            {
+                "answer": "Il est fort car il utilise un minimum de 10 chiffres, lettres et caractères spéciaux.",
+                "correct": false
+            },
+            {
+                "answer": "Il est faible car il utilise des renseignements personnels facilement trouvés.",
+                "correct": true
+            },
+            {
+                "answer": "Il est faible car c’est un mot qui se trouve facilement dans le dictionnaire.",
+                "correct": false
+            }
+        ]
+    }
+]

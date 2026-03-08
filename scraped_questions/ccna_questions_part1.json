@@ -1,0 +1,402 @@
+[
+    {
+        "question": "Un employé d’une filiale établit un devis pour un client. Pour ce faire, il doit accéder à des informations confidentielles de prix sur les serveurs internes du siège. À quel type de réseau l’employé pourrait-il accéder ?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Un réseau local",
+                "correct": false
+            },
+            {
+                "answer": "Un intranet",
+                "correct": true
+            },
+            {
+                "answer": "Un extranet",
+                "correct": false
+            },
+            {
+                "answer": "sur Internet",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Que configure le technicien ?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "L’accès au port de commutateur physique",
+                "correct": false
+            },
+            {
+                "answer": "L’interface SVI",
+                "correct": true
+            },
+            {
+                "answer": "L’accès à Telnet",
+                "correct": false
+            },
+            {
+                "answer": "Le chiffrement du mot de passe",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Après avoir modifié la configuration sur un commutateur Cisco, un administrateur réseau exécute la commande copy running-config startup-config . Quel est le résultat de l’exécution de cette commande ?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "La nouvelle configuration est stockée dans la mémoire flash.",
+                "correct": false
+            },
+            {
+                "answer": "La nouvelle configuration est chargée si le commutateur redémarre.",
+                "correct": true
+            },
+            {
+                "answer": "Le fichier IOS actuel est remplacé par le fichier qui vient d’être configuré.",
+                "correct": false
+            },
+            {
+                "answer": "Les modifications de la configuration sont supprimées et la configuration d’origine est restaurée.",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Quel format d’unité de données de protocole est utilisé lorsque des bits sont reçus du support réseau par la carte réseau d’un hôte ?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "segment",
+                "correct": false
+            },
+            {
+                "answer": "fichier",
+                "correct": false
+            },
+            {
+                "answer": "trame",
+                "correct": true
+            },
+            {
+                "answer": "paquet",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Quel terme décrit un modèle informatique où les logiciels serveur s’exécutent sur des ordinateurs dédiés?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "La couche Internet",
+                "correct": false
+            },
+            {
+                "answer": "intranet",
+                "correct": false
+            },
+            {
+                "answer": "client/serveur",
+                "correct": true
+            },
+            {
+                "answer": "extranet",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "À quelle couche OSI les données sont-elles ajoutées à une PDU pendant le processus d’encapsulation?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "couche application",
+                "correct": true
+            },
+            {
+                "answer": "couche présentation",
+                "correct": false
+            },
+            {
+                "answer": "couche réseau",
+                "correct": false
+            },
+            {
+                "answer": "couche transport",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Parmi les propositions suivantes, laquelle décrit l’utilisation d’une technologie de réseau sur courant électrique ?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Un LAN domestique est installé sans utiliser de câblage physique.",
+                "correct": false
+            },
+            {
+                "answer": "Un terminal se connecte à un LAN domestique grâce à un adaptateur et à une prise de courant électrique.",
+                "correct": true
+            },
+            {
+                "answer": "Un nouveau câblage électrique intelligent est utilisé pour étendre un réseau LAN domestique.",
+                "correct": false
+            },
+            {
+                "answer": "Les points d’accès sans fil utilisent des adaptateurs de courant électrique pour diffuser les données à travers le LAN domestique.",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Quel type de trafic réseau nécessite une QoS ?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "L’achat en ligne",
+                "correct": false
+            },
+            {
+                "answer": "wiki",
+                "correct": false
+            },
+            {
+                "answer": "E-mail",
+                "correct": false
+            },
+            {
+                "answer": "La vidéoconférence",
+                "correct": true
+            }
+        ]
+    },
+    {
+        "question": "Dans quelle couche du modèle OSI une adresse logique est-elle ajoutée pendant l’encapsulation ?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Couche liaison de données",
+                "correct": false
+            },
+            {
+                "answer": "Couche physique",
+                "correct": false
+            },
+            {
+                "answer": "Couche réseau",
+                "correct": true
+            },
+            {
+                "answer": "Couche transport",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Un technicien en réseau travaille sur le réseau sans fil dans une clinique médicale. Le technicien configure accidentellement le réseau sans fil afin que les patients puissent voir les données des dossiers médicaux d’autres patients. Laquelle des quatre caractéristiques du réseau a été violée dans cette situation?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Fiabilité",
+                "correct": false
+            },
+            {
+                "answer": "sécurité",
+                "correct": true
+            },
+            {
+                "answer": "évolutivité",
+                "correct": false
+            },
+            {
+                "answer": "Qualité de service (QoS)",
+                "correct": false
+            },
+            {
+                "answer": "tolérance aux pannes",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "A quelle couche OSI une adresse MAC source est-elle ajoutée à une PDU pendant le processus d’encapsulation?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "couche transport",
+                "correct": false
+            },
+            {
+                "answer": "couche liaison de données",
+                "correct": true
+            },
+            {
+                "answer": "couche application",
+                "correct": false
+            },
+            {
+                "answer": "couche présentation",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Dans le modèle TCP/IP, quelle couche permet de router les messages via un interréseau ?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Session",
+                "correct": false
+            },
+            {
+                "answer": "Internet",
+                "correct": true
+            },
+            {
+                "answer": "Transport",
+                "correct": false
+            },
+            {
+                "answer": "Accès réseau",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Dans la commande show running-config , quelle partie de la syntaxe est représentée par running-config ?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "la commande",
+                "correct": false
+            },
+            {
+                "answer": "mot clé",
+                "correct": true
+            },
+            {
+                "answer": "une invite",
+                "correct": false
+            },
+            {
+                "answer": "Variable",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Quel terme décrit le stockage de fichiers personnels sur des serveurs sur Internet pour fournir un accès n’importe où, n’importe quand et sur n’importe quel appareil?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "BYOD",
+                "correct": false
+            },
+            {
+                "answer": "cloud",
+                "correct": true
+            },
+            {
+                "answer": "réseau convergent",
+                "correct": false
+            },
+            {
+                "answer": "Qualité de service",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Quel terme décrit la capacité d’utiliser des appareils personnels sur un réseau d’entreprise ou de campus?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "extranet",
+                "correct": false
+            },
+            {
+                "answer": "intranet",
+                "correct": false
+            },
+            {
+                "answer": "BYOD",
+                "correct": true
+            },
+            {
+                "answer": "La couche Internet",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Quel terme décrit un réseau appartenant à une organisation qui offre un accès sûr et sécurisé aux personnes qui travaillent pour une organisation différente?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "cloud",
+                "correct": false
+            },
+            {
+                "answer": "BYOD",
+                "correct": false
+            },
+            {
+                "answer": "Qualité de service",
+                "correct": false
+            },
+            {
+                "answer": "extranet",
+                "correct": true
+            }
+        ]
+    },
+    {
+        "question": "A quelle couche OSI une adresse IP destination est-elle ajoutée à une PDU pendant le processus d’encapsulation?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "couche réseau",
+                "correct": true
+            },
+            {
+                "answer": "couche présentation",
+                "correct": false
+            },
+            {
+                "answer": "couche transport",
+                "correct": false
+            },
+            {
+                "answer": "couche application",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Quel terme décrit une politique qui permet aux périphériques réseau de gérer le flux de données pour donner la priorité à la voix et à la vidéo?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "La couche Internet",
+                "correct": false
+            },
+            {
+                "answer": "Qualité de service",
+                "correct": true
+            },
+            {
+                "answer": "intranet",
+                "correct": false
+            },
+            {
+                "answer": "extranet",
+                "correct": false
+            }
+        ]
+    }
+]

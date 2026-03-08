@@ -1,0 +1,430 @@
+[
+    {
+        "question": "Quelle propriété d’ARP permet aux hôtes d’un réseau local d’envoyer du trafic vers des réseaux distant?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "L’adresse MAC de source apparaît dans l’en-tête de la trame Ethernet.",
+                "correct": false
+            },
+            {
+                "answer": "L’adresse MAC de la passerelle par défaut",
+                "correct": true
+            },
+            {
+                "answer": "L’adresse MAC de destination FF-FF-FF-FF-FF-FF apparaît dans l’en-tête de la trame Ethernet.",
+                "correct": false
+            },
+            {
+                "answer": "Les réponses ARP sont diffusées sur le réseau lorsqu’un hôte reçoit une demande ARP.",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Refer to the exhibit. Un administrateur réseau connecte un nouvel hôte au réseau local du Store. L’hôte doit communiquer avec les réseaux distants. Quelle adresse IP doit être configurée comme passerelle par défaut sur le nouvel hôte?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "172.19.98.1",
+                "correct": false
+            },
+            {
+                "answer": "10.98.99.254",
+                "correct": false
+            },
+            {
+                "answer": "172.19.98.230",
+                "correct": true
+            },
+            {
+                "answer": "209.165.200.120",
+                "correct": false
+            },
+            {
+                "answer": "172.19.99.99",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Pourquoi la traduction d’adresses de réseau (NAT) n’est pas nécessaire dans IPv6 ?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "N’importe quel hôte ou utilisateur peut obtenir une adresse réseau IPv6 publique car le nombre d’adresses IPv6 disponibles est très important.",
+                "correct": true
+            },
+            {
+                "answer": "IPv6 dispose d’une sécurité intégrée, il est donc inutile de masquer les adresses IPv6 des réseaux internes.",
+                "correct": false
+            },
+            {
+                "answer": "Les problèmes de connectivité de bout en bout causés par la fonction NAT sont résolus car le nombre de routes augmente proportionnellement au nombre de noeuds connectés à Internet.",
+                "correct": false
+            },
+            {
+                "answer": "Les problèmes induits par les applications NAT sont résolus car l’en-tête IPv6 améliore le traitement des paquets par les routeurs intermédiaires.",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Quelle propriété d’ARP fait que les cartes réseau recevant une demande ARP transmettent la partie données de la trame Ethernet au processus ARP?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "La table d’adresses Port-à-Mac sur un commutateur a les mêmes entrées que la table ARP sur le commutateur.",
+                "correct": false
+            },
+            {
+                "answer": "L’adresse MAC de destination FF-FF-FF-FF-FF-FF apparaît dans l’en-tête de la trame Ethernet.",
+                "correct": false
+            },
+            {
+                "answer": "Le champ de type 0x806 apparaît dans l’en-tête de la trame Ethernet.",
+                "correct": true
+            },
+            {
+                "answer": "Les entrées d’une table ARP sont horodatées et purgées après l’expiration du délai d’expiration.",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Refer to the exhibit. Un administrateur réseau connecte un nouvel hôte au réseau local Manager. L’hôte doit communiquer avec les réseaux distants. Quelle adresse IP doit être configurée comme passerelle par défaut sur le nouvel hôte?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "10.118.63.65",
+                "correct": false
+            },
+            {
+                "answer": "10.62.63.254",
+                "correct": false
+            },
+            {
+                "answer": "209.165.200.87",
+                "correct": false
+            },
+            {
+                "answer": "10.118.62.196",
+                "correct": true
+            },
+            {
+                "answer": "10.118.62.1",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Refer to the exhibit. Un administrateur réseau est en train de connecter un nouvel hôte au réseau local du bureau d’enregistrement. L’hôte doit communiquer avec les réseaux distants. Quelle adresse IP doit être configurée comme passerelle par défaut sur le nouvel hôte ?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "192.168.235.1",
+                "correct": false
+            },
+            {
+                "answer": "192.168.234.114",
+                "correct": false
+            },
+            {
+                "answer": "203.0.113.3",
+                "correct": false
+            },
+            {
+                "answer": "10.234.235.254",
+                "correct": false
+            },
+            {
+                "answer": "192.168.235.234",
+                "correct": true
+            }
+        ]
+    },
+    {
+        "question": "Refer to the exhibit.exposition. Un administrateur réseau connecte un nouvel hôte au réseau local du Store. L’hôte doit communiquer avec les réseaux distants. Quelle adresse IP doit être configurée comme passerelle par défaut sur le nouvel hôte?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "198.51.100.156",
+                "correct": false
+            },
+            {
+                "answer": "172.20.132.13",
+                "correct": true
+            },
+            {
+                "answer": "172.20.132.1",
+                "correct": false
+            },
+            {
+                "answer": "172.20.133.132",
+                "correct": false
+            },
+            {
+                "answer": "10.132.133.254",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Quelle propriété d’ARP permet de fixer les adresses MAC des serveurs fréquemment utilisés dans la table ARP?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Une entrée d’adresse IP à Mac statique peut être saisie manuellement dans une table ARP.",
+                "correct": true
+            },
+            {
+                "answer": "L’adresse MAC de source apparaît dans l’en-tête de la trame Ethernet.",
+                "correct": false
+            },
+            {
+                "answer": "La table d’adresses Port-à-Mac sur un commutateur a les mêmes entrées que la table ARP sur le commutateur.",
+                "correct": false
+            },
+            {
+                "answer": "L’adresse MAC de destination FF-FF-FF-FF-FF-FF apparaît dans l’en-tête de la trame Ethernet.",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Refer to the exhibit. Un administrateur réseau connecte un nouvel hôte au réseau local de Payroll. L’hôte doit communiquer avec les réseaux distants. Quelle adresse IP doit être configurée comme passerelle par défaut sur le nouvel hôte?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "10.27.14.148",
+                "correct": true
+            },
+            {
+                "answer": "10.27.15.17",
+                "correct": false
+            },
+            {
+                "answer": "203.0.113.39",
+                "correct": false
+            },
+            {
+                "answer": "10.14.15.254",
+                "correct": false
+            },
+            {
+                "answer": "10.27.14.1",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Quel terme décrit un champ de l’en-tête de paquet IPv4 qui contient une adresse de monodiffusion, de multidiffusion ou de diffusion ?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Durée de vie",
+                "correct": false
+            },
+            {
+                "answer": "Somme de contrôle d’en-tête",
+                "correct": false
+            },
+            {
+                "answer": "protocole",
+                "correct": false
+            },
+            {
+                "answer": "L’adresse IP de destination",
+                "correct": true
+            }
+        ]
+    },
+    {
+        "question": "Sur un ordinateur hôte, où sont enregistrés les mappages adresse IPv4-adresse Ethernet de couche 2 ?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "table de voisinage",
+                "correct": false
+            },
+            {
+                "answer": "cache ARP",
+                "correct": true
+            },
+            {
+                "answer": "table de routage",
+                "correct": false
+            },
+            {
+                "answer": "Table des adresses MAC",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Quelle propriété d’ARP fait que les mappages IP-Mac mis en cache restent en mémoire plus longtemps?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Le champ de type 0x806 apparaît dans l’en-tête de la trame Ethernet.",
+                "correct": false
+            },
+            {
+                "answer": "La table d’adresses Port-à-Mac sur un commutateur a les mêmes entrées que la table ARP sur le commutateur.",
+                "correct": false
+            },
+            {
+                "answer": "Les entrées d’une table ARP sont horodatées et purgées après l’expiration du délai d’expiration.",
+                "correct": true
+            },
+            {
+                "answer": "Une entrée d’adresse IP à Mac statique peut être saisie manuellement dans une table ARP.",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Refer to the exhibit. Un administrateur réseau connecte un nouvel hôte au réseau local Medical. L’hôte doit communiquer avec les réseaux distants. Quelle adresse IP doit être configurée comme passerelle par défaut sur le nouvel hôte?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "10.190.191.254",
+                "correct": false
+            },
+            {
+                "answer": "192.168.191.1",
+                "correct": false
+            },
+            {
+                "answer": "192.168.191.189",
+                "correct": true
+            },
+            {
+                "answer": "198.51.100.213",
+                "correct": false
+            },
+            {
+                "answer": "192.168.190.70",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Quelle propriété d’ARP provoque l’inondation de la demande de tous les ports d’un commutateur à l’exception du port recevant la demande ARP?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Les entrées d’une table ARP sont horodatées et purgées après l’expiration du délai d’expiration.",
+                "correct": false
+            },
+            {
+                "answer": "Le champ de type 0x806 apparaît dans l’en-tête de la trame Ethernet.",
+                "correct": false
+            },
+            {
+                "answer": "Les réponses ARP sont diffusées sur le réseau lorsqu’un hôte reçoit une demande ARP.",
+                "correct": false
+            },
+            {
+                "answer": "L’adresse MAC de destination FF-FF-FF-FF-FF-FF apparaît dans l’en-tête de la trame Ethernet.",
+                "correct": true
+            }
+        ]
+    },
+    {
+        "question": "Quelle propriété d’ARP provoque une réponse uniquement à la source qui envoie une demande ARP?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Les réponses ARP sont diffusées sur le réseau lorsqu’un hôte reçoit une demande ARP.",
+                "correct": false
+            },
+            {
+                "answer": "L’adresse MAC de destination FF-FF-FF-FF-FF-FF apparaît dans l’en-tête de la trame Ethernet.",
+                "correct": false
+            },
+            {
+                "answer": "Le champ de type 0x806 apparaît dans l’en-tête de la trame Ethernet.",
+                "correct": false
+            },
+            {
+                "answer": "L’adresse MAC de source apparaît dans l’en-tête de la trame Ethernet.",
+                "correct": true
+            }
+        ]
+    },
+    {
+        "question": "Refer to the exhibit. Un administrateur réseau connecte un nouvel hôte au Service de réseau local. L’hôte doit communiquer avec les réseaux distants. Quelle adresse IP doit être configurée comme passerelle par défaut sur le nouvel hôte?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "198.51.100.177",
+                "correct": false
+            },
+            {
+                "answer": "172.29.157.1",
+                "correct": false
+            },
+            {
+                "answer": "172.29.156.36",
+                "correct": false
+            },
+            {
+                "answer": "10.156.157.254",
+                "correct": false
+            },
+            {
+                "answer": "172.29.157.156",
+                "correct": true
+            }
+        ]
+    },
+    {
+        "question": "Quel terme décrit un champ dans l’en-tête de paquet IPv4 utilisé pour limiter la durée de vie d’un paquet?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Durée de vie (TTL)",
+                "correct": true
+            },
+            {
+                "answer": "protocole",
+                "correct": false
+            },
+            {
+                "answer": "adresse IPv4 source",
+                "correct": false
+            },
+            {
+                "answer": "Somme de contrôle d’en-tête",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Se reporter à la pièce. Un administrateur réseau connecte un nouvel hôte au réseau local Registrar. L’hôte doit communiquer avec les réseaux distants. Quelle adresse IP doit être configurée comme passerelle par défaut sur le nouvel hôte?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "10.224.225.254",
+                "correct": false
+            },
+            {
+                "answer": "192.168.225.1",
+                "correct": false
+            },
+            {
+                "answer": "192.168.224.103",
+                "correct": false
+            },
+            {
+                "answer": "203.0.113.246",
+                "correct": false
+            },
+            {
+                "answer": "192.168.225.223",
+                "correct": true
+            }
+        ]
+    }
+]
